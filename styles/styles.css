@@ -1,10 +1,15 @@
 body{
-    font-family: "inter", Arial, Helvetica, sans-serif;
+    font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
 }
 
 h1{
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-family: "Source Sans 3",'Lora';
+    font-size: 5rem;
+    font-weight: 500;
+    
 }
 
 
@@ -18,12 +23,107 @@ h3{
     font-weight: 400;
 }
 
-.project-item{
-    border: 1px solid black;
+main{
+    padding:1rem;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.site-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+/* https://stackoverflow.com/questions/31180810/sliding-border-from-right-to-left-using-css */
+a:hover,a:focus,a:active,a:visited{
+    border-bottom: 2px solid #151d31;
+    transition: ease-in-out .3s;
+}
+.site-nav a{
     padding: 1rem;
-    margin: 1rem;
-    border-radius: 1px;
-    max-width: 250px;
-    max-height: 250px;
+}
+
+.banner{
+    max-width: 100%;
+    height: 50%;
+}
+
+.about-me{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    
+}
+
+.projects h2{
     text-align: center;
+
+}
+.projects-section{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.project-item{
+    position: relative;
+    border-radius: 1px;
+    
+}
+
+img{
+    position: relative;
+}
+
+.card-img{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+}
+
+.project-item h3{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+footer{
+    background-color: #151d31;
+    color: white;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:40em){
+    .about-me{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (min-width:55em){
+    .about-me{
+        width: 50%;
+    }
+    
 }
