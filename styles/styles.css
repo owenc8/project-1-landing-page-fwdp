@@ -28,20 +28,26 @@ main{
     margin: 0 auto;
     max-width: 80%;
 }
+header{
+    margin: 1rem;
+}
 
 .site-header{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    justify-content: space-around;
 }
 
 .site-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    margin: 0;
 }
 a{
+    
     color: black;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -83,21 +89,31 @@ a:hover,a:focus,a:active,a:visited{
     margin-bottom: 4rem;
 }
 .project-item{
-    position: relative;
-    border-radius: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
     
 }
-
-img{
-    position: relative;
+.img-link{
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid transparent;
 }
 
-.card-img{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+.img-link:hover{
+    border-bottom: 2px solid #151d31;
 }
 
+figure{
+    margin: 0;
+}
+
+.portrait{
+    border-radius: 50%;
+}
 .project-item h3{
-    position: absolute;
     text-align: center;
     width: 100%;
     top: 50%;
@@ -107,16 +123,22 @@ img{
 }
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     background-color: #151d31;
     color: white;
-    height:5rem;
-    display: flex;
-    justify-content: center;
+    height:8rem;
 }
 
 @media screen and (min-width:40em){
     .about-me{
         width: 70%;
+    }
+
+    .site-nav{
+        margin: 0 1rem;
     }
     
 }
@@ -124,6 +146,19 @@ footer{
 @media screen and (min-width:55em){
     .about-me{
         width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:40.3em){
+    h1{
+        font-size: 3rem;
+    }
+    main{
+        padding: 0 ;
+    }
+    .site-header{
+        width: 95%;
     }
     
 }
