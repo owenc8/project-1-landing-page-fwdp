@@ -23,10 +23,10 @@
 /* Typography
 --------------------------------------------- */
 body {
-	font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
-	font-size: 1rem;
+	font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 h1,
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+	font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
 	
 }
 
@@ -46,46 +46,24 @@ p {
 
 /* Elements
 --------------------------------------------- */
-ul {
-	
-}
-
-ol {
-	
-}
-
-dl {
-	
-}
 
 figure {
-	
-}
-
-table {
-	
+	margin: 0;
 }
 
 /* Links
 --------------------------------------------- */
-a {
-	
+a{
+    
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 
-a:visited {
-	
-}
 
-a:hover {
-	
-}
-
-a:focus {
-	
-}
-
-a:active {
-	
+a:hover,a:focus,a:active,a:visited{
+    border-bottom: 2px solid #000000;
+    transition: ease-in-out .3s;
 }
 
 
@@ -101,7 +79,9 @@ a:active {
 
 /* Header
 --------------------------------------------- */
-
+header{
+    margin: 1rem;
+}
 
 /* Main
 --------------------------------------------- */
