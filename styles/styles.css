@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/* typography */
 body{
     font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -29,27 +30,11 @@ main{
     margin: 0 auto;
     max-width: 80%;
 }
+
+/* header and banner */
 header{
     margin: 1rem;
 }
-
-.hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/japan-scooter.webp);
-    /* photo taken by me March 23 2019 */
-    height: 30rem;
-    background-size: cover; 
-    background-position: center;
-    position: relative;
-}
-
-.name{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    }
 
 .site-header{
     display: flex;
@@ -66,7 +51,31 @@ header{
     justify-content: right;
     margin: 0;
 }
+/* For the hero and name classes i used this resource: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/japan-scooter.webp);
+    /* photo taken by me March 23 2019 */
+    height: 30rem;
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
 
+.name{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.banner{
+    max-width: 100%;
+    height: 50%;
+}
+
+/* links */
 a{
     color: black;
     text-decoration: none;
@@ -82,17 +91,13 @@ a:hover,a:focus,a:active,a:visited{
     padding: 1rem;
 }
 
-.banner{
-    max-width: 100%;
-    height: 50%;
-}
-
 .about-me{
     width: 100%;
     margin: 0 auto;
     margin-bottom: 4rem;
 }
 
+/* projects */
 .projects h2{
     text-align: center;
 
@@ -109,31 +114,17 @@ a:hover,a:focus,a:active,a:visited{
 }
 .project-item{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
     padding:0 0 1rem;
-}
-
-/* https://www.w3schools.com/howto/howto_css_image_text.asp */
-.container{
-    position: relative;
-    text-align: center;
-}
-.overlay{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
 }
 
 figure{
     margin: 0;
 }
 
-.portrait{
-    border-radius: 50%;
+figcaption{
+    padding:0 1rem 0.5rem;
 }
 
 footer{
@@ -159,6 +150,7 @@ footer{
 @media screen and (min-width:55em){
     .about-me{
         width: 50%;
+        margin-bottom: 6rem;
     }
 }
 
